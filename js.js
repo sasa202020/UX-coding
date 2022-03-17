@@ -32,7 +32,7 @@ function initMap() {
         43
       ]
     ];
-//55.42787041249714, 12.181131837151261
+
       for(let i = 0; i<markers.length; i++){
         const currMarker = markers[i];
 
@@ -57,5 +57,5 @@ function initMap() {
 
    
 }
-//
+
 
