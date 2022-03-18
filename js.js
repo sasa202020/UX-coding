@@ -9,7 +9,7 @@ function initMap() {
         "Test title0",
       55.45802,
       12.18214,
-      "/pics/bluepinpoint.png",
+      "./pics/bluepinpoint.png",
       28,
       43
       ],
@@ -18,7 +18,7 @@ function initMap() {
         "Køge Svømmeland",
         55.48472451959858,
         12.17600994876877,
-        "/pics/bluepinpoint.png",
+        "./pics/bluepinpoint.png",
         28,
         43
       ],
@@ -27,7 +27,7 @@ function initMap() {
         "Køge Golf Club",
         55.42787041249714,
         12.181131837151261,
-        "/pics/bluepinpoint.png",
+        "./pics/bluepinpoint.png",
         28,
         43
       ]

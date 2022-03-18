@@ -9,9 +9,42 @@
     
 </head>
 <body>
-    <h1>Search attractions, hotels and experiences</h1>
-    <p>We have listed attractions, services, places to stay and more right here. 
-        So you can search everything you need to plan your holiday.</p>
+   <!-- navigation bar start-->
+   <a href="https://oplevkoege.dk/"><img src="./pics/logo.png" alt="Logo" width="100px" class="logo"></a>
+<nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <img class="find" src="./pics/find.png" alt="find" width="40px" >
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#000000" stroke-width="2"/>
+          <path d="M0,14 30,14" stroke="#000000" stroke-width="2"/>
+          <path d="M0,23 30,23" stroke="#000000" stroke-width="2"/>
+        </svg>
+      </a>
+    </span>
+    <ul class="navbar-nav">
+      <li><a href="#" class="open-button" onclick="openForm()">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <section id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="about.html">About</a>
+    <a href="#" class="open-button" onclick="openForm()">Contact</a>
+  </section>
+  <!-- navigation bar end-->
+  <!-- script for opening side menu start-->
+    <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '150px';
+      document.getElementById('main').style.marginLeft = '150px';
+    }
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+  <!-- script for opening side menu end-->
         <div class="scrollmenu">
             <a href="#"><img src="pics/274461_Attractions.png" alt="Attractions"></a>
             <a href="#"><img src="pics/274464_Activities.png" alt="Activities"></a>
