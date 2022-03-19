@@ -4,7 +4,8 @@ function initMap() {
     zoom: 12,
     mapId: '86ad4126f5ea124b'
     });
-    const markers = [                                    //adding array of markers
+    const markers = [   
+                                       //adding array of markers
       [
         "Test title0",
       55.45802,
