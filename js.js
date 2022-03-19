@@ -4,8 +4,7 @@ function initMap() {
     zoom: 12,
     mapId: '86ad4126f5ea124b'
     });
-    const markers = [   
-                                       //adding array of markers
+    const markers = [                                    //adding array of markers
       [
         "Test title0",
       55.45802,
@@ -45,10 +44,10 @@ let marker1 = {
   lng : 12.17600994876877,
   url : "./pics/bluepinpoint.png",
 } 
-let marker2 = {
-  title : "Køge Golf Club",
-  lat : 55.42787041249714,
-  lng : 12.181131837151261,
+let marker1 = {
+  title : "Køge Svømmeland",
+  lat : 55.48472451959858,
+  lng : 12.17600994876877,
   url : "./pics/bluepinpoint.png",
 }   */
       for(let i = 0; i<markers.length; i++){
