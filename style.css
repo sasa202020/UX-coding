@@ -85,21 +85,28 @@ body {
 }
 /* end for nav bar*/
 /* scroll for desktop start */
-div.scrollmenu {
+.scrollmenu{
+  padding: 10px;
+}
+section.scrollmenu {
     overflow: auto;
     white-space: nowrap;
     z-index: 4;
+    top: 520px;
+    position: relative;
   }
   
-  div.scrollmenu a {
+  section.scrollmenu a {
     display: inline-block;
     color: var(--white);
     text-align: center;
-    padding: 14px;
     text-decoration: none;
     z-index: 4;
   }
   
+  .buttonlist{
+    border-radius: 7px;
+  }
 /* scroll for desktop end */
 /* style for activities page content start*/
 
