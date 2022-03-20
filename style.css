@@ -2,6 +2,7 @@
   --mint:#00BF6F;
   --black:#000000;
   --white:#ffffff;
+  --darkgreen:#11403D;
 }
 *{
     color: rgb(0, 0, 0);
@@ -24,14 +25,21 @@ body {
   background-color: var(--white);
   border-radius: 100px;
 }
-
+.navbar-nav{
+  font-size: 19px;
+  padding: 20px;
+}
+li{
+  margin-right: 360px;
+  margin-top: 20px;
+}
 .navbar a{
   float:right;
-  display:block;
   text-align:center;
   padding:14px;
   text-decoration:none;
   z-index: 4;
+  margin-right: 10px;
 }
 
 .navbar ul{
@@ -145,12 +153,54 @@ margin-left: 50px;
     margin-left: 50px;
   }
 /* style for activities page content end*/
+/*deskTOp style start*/
+.desktopwhite{
+  color: var(--white);
+}
+.greencontent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--darkgreen) ;
+  text-align:start;
+  width: 66%;
+  height: 80px;
+}
+section.greencontent{
+  margin-left: 17%;
+  margin-top: 44px;
+}
+/*deskTOp style end*/
+
   /*  mediaq for nav bar start*/
 @media screen and (max-width: 700px) {
     .navbar ul {
       display:none;
     }
   }
+  @media screen and (min-width: 700px) {
+    .navbar{
+      background-color: none;
+      border-radius: 0;
+    }
+    .logo{
+      width: 160px;
+      left: 19%;
+      top: 32px;
+    }
+    
+    #map{
+      width: 44%;
+      right: 6%;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .greencontent{
+      display: none;
+    }
+  }
+  
+  
   @media screen and (min-width: 701px) {
     .open-slide {
       display:none;
