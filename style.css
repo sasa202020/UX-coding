@@ -98,14 +98,19 @@ section.scrollmenu {
   
   section.scrollmenu a {
     display: inline-block;
-    color: var(--white);
     text-align: center;
-    text-decoration: none;
     z-index: 4;
+    border: none;
   }
   
   .buttonlist{
     border-radius: 7px;
+    border: #ffffff;
+    border-left: 25px 
+  }
+  h6{
+    font-size: large;
+    margin-top: 5px;
   }
 /* scroll for desktop end */
 /* style for activities page content start*/
@@ -116,7 +121,28 @@ section.scrollmenu {
     z-index: -1;
     position: absolute;
     top: 0px;
-
+  }
+  .icon1{
+    margin-top: -35px;
+  }
+  .icon2{
+    margin-top: 10px;
+  }
+  .text1{
+color: rgb(0, 0, 0);
+margin-top: -35px;
+margin-left: 50px;
+  }
+  .text2{
+    margin-top:-35px;
+    margin-left: 50px;
+  }
+  .icon3{
+    margin-top: 5px;
+  }
+  .text3{
+    margin-top:-32px;
+    margin-left: 50px;
   }
 /* style for activities page content end*/
   /*  mediaq for nav bar start*/
