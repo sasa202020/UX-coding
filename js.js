@@ -1,3 +1,9 @@
+
+
+
+
+
+
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {   // call for map
     center: {lat: 55.45802, lng: 12.18214},
@@ -67,7 +73,7 @@ let marker1 = {
           animation: google.maps.Animation.DROP   //just for test better for delete i think
         });
         const infowindow = new google.maps.InfoWindow({      //adding info window
-          content: "<img src='./pics/restaurant.jpg' width='200px';><h6>Restaurant Arken</h6><img class='icon1' src='./pics/find.png' width='40px'><p class='text1'>Bådehavnen 21, 4600 Køge</p><img class='icon2' src='./pics/phone.png' width='40px'><p class='text2'>56 66 05 05</p><img class='icon3' src='./pics/mail.png' width='40px'><p class='text3'>kontakt@restaurant-arken.dk</p>"
+          content: "will insert info after here will insert info after here will insert info after here will insert info after here",
         });
         marker.addListener("click", () =>{          // call for opening info window
           infowindow.open(map,marker);
@@ -79,3 +85,28 @@ let marker1 = {
 }
 
 
+const open_btn = document.querySelector('.open-btn');
+const close_btn = document.querySelector('.close-btn');
+const popup = document.querySelector('.popup');
+const main_popup = document.querySelector('.main-popup');
+
+open_btn.addEventListener('click', () => {
+	popup.style.display = 'flex';
+	main_popup.style.cssText = 'animation:slide-in .5s ease; animation-fill-mode: forwards;';
+});
+
+close_btn.addEventListener('click', () => {
+	main_popup.style.cssText = 'animation:slide-out .5s ease; animation-fill-mode: forwards;';
+	setTimeout(() => {
+		popup.style.display = 'none';
+	}, 500);
+});
+
+window.addEventListener('click', (e) => {
+	if (e.target == document.querySelector('.popup-overlay')) {
+		main_popup.style.cssText = 'animation:slide-out .5s ease; animation-fill-mode: forwards;';
+		setTimeout(() => {
+			popup.style.display = 'none';
+		}, 500);
+	}
+});
