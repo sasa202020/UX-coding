@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     
 </head>
+
 <body>
    <!-- navigation bar start-->
    <a href="https://oplevkoege.dk/"><img src="./pics/logo.png" alt="Logo" width="100px" class="logo"></a>
@@ -45,7 +46,7 @@
   </section>
   <!-- navigation bar end-->
   <!-- script for opening side menu start-->
-    <script>
+  <script>
     function openSlideMenu(){
       document.getElementById('side-menu').style.width = '100%';
       document.getElementById('main').style.marginLeft = '0px';
@@ -71,14 +72,60 @@
             <a href="#"><img src="pics/274465_Conference.png" alt="Conference and meeting venues"></a>
     </div>
     will go for desktop version -->
-                <script src="js.js"></script>
+
+ 
+  
                 <div id="map"></div>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHcm9ruvl4ZIL277Rlhlta_NitI_FNj9o&map_ids=86ad4126f5ea124b&callback=initMap"> </script>
                 <br>
-                <button onclick="openPinpointInfo0()" id="button1">click option 1</button>
-                <button onclick="openPinpointInfo1()" id="button2">click option 2</button>
-                <button onclick="openPinpointInfo2()" id="button3">click option 3</button>
-        
+                
 
+
+<!--Adam popup overlay bottom--> 
+<section>       
+    <div class="overlaycontainer">
+      <div class="btn">
+        <button class="open-btn">Click me</button>
+      </div>
+      <div class="popup">
+        <div class="popup-overlay"></div>
+        <div class="main-popup">
+          <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h1>Activities</h1>
+            <button class="btn-categories" onclick="openPinpointInfo0()" id="button1">click option 1</button>
+            <button class="btn-categories" onclick="openPinpointInfo1()" id="button2">click option 2</button>
+            <button class="btn-categories" onclick="openPinpointInfo2()" id="button3">click option 3</button>
+           
+            <div class="contentframe">
+
+              <div class="imageframe">
+                <img src="img/1.jpg"></img>
+              </div>
+
+              <div class="imageframe">
+                <img src="img/1.jpg"></img>
+              </div>
+
+              <div class="imageframe">
+                <img src="img/1.jpg"></img>
+              </div>
+
+              <div class="imageframe">
+                <img src="img/1.jpg"></img>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<script src="js.js"></script>
+   
 </body>
+
+
 </html>

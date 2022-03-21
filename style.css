@@ -6,10 +6,22 @@
 *{
     color: rgb(0, 0, 0);
 }
-body {
 
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: helvetica;
+  src: url(fonts/HelveticaNeue.ttf);
+  font-weight: lighter;
+}
+@font-face {
+  font-family: helvetica;
+  src: url(fonts/HelveticaNeue\ Medium.ttf);
+  font-weight: medium;
+}
+
+body {
+  font-family: helvetica;
+  margin: 0;
+  padding: 0;
   }
 /* start for nav bar*/
 .logo{
@@ -125,3 +137,128 @@ div.scrollmenu {
   }
   /*  mediaq for nav bar end*/
   
+
+  
+  /*popup bottom overlay*/
+  
+  .overlaycontainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .open-btn{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+  }
+  .popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .popup-overlay{
+    background-color: rgba(0, 0, 0, 0);
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+  }
+  .main-popup{
+    position: absolute;
+    bottom: 0;
+    height: 50vh;
+    width: 90%;
+    z-index: 1;
+    background: rgb(228, 228, 228);
+    line-height: 1rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px 50px 0px 0px;
+  }
+  .close-btn{
+    padding: 10px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .5s ease all ;
+
+}
+.close-btn:hover{
+  background: white;
+
+}
+.popup-content{
+  text-align: center;
+}
+.popup-content p{
+  font-size: 1.5rem;
+  line-height: 1rem;
+
+}
+@keyframes slide-in {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes slide-out {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+.btn-categories{
+  padding: 5px 20px;
+  margin: 20px;
+  top: 0;
+  border-radius: 50px;
+  background-color: ;
+  border: 3px solid #00BF6F;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: helvetica;
+
+}
+.imageframe{
+  position: relative;
+  width: 20vh;
+  height: 12vh;
+  top: 0;
+  background-color:rgb(255, 255, 255);
+  z-index: 100;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.contentframe{
+  
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+}
