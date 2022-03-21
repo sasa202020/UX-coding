@@ -9,27 +9,77 @@
     
 </head>
 <body>
-    <h1>Search attractions, hotels and experiences</h1>
-    <p>We have listed attractions, services, places to stay and more right here. 
-        So you can search everything you need to plan your holiday.</p>
-        <div class="scrollmenu">
-            <a href="#"><img src="pics/274461_Attractions.png" alt="Attractions"></a>
-            <a href="#"><img src="pics/274464_Activities.png" alt="Activities"></a>
-            <a href="#"><img src="pics/274466_Places_to_eat.png" alt="Foods and drinks"></a>
-            <a href="#"><img src="pics/274463_Events.png" alt="Events"></a>
-            <a href="#"><img src="pics/274460_Transport.png" alt="Transport"></a>
-            <a href="#"><img src="pics/274462_Service.png" alt="Service and info"></a>
-            <a href="#"><img src="pics/274459_Accomodations.png" alt="Accomodation"></a>
-            <a href="#"><img src="pics/274465_Conference.png" alt="Conference and meeting venues"></a>
-    </div>
+   <!-- navigation bar start-->
+   <a href="https://oplevkoege.dk/"><img src="./pics/logo.png" alt="Logo" width="100px" class="logo"></a>
+<nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <img class="find" src="./pics/find.png" alt="find" width="40px" >
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#00BF6F" stroke-width="2"/>
+          <path d="M0,14 30,14" stroke="#00BF6F" stroke-width="2"/>
+          <path d="M0,23 30,23" stroke="#00BF6F" stroke-width="2"/>
+        </svg>
+      </a>
+    </span>
+    <ul class="navbar-nav">
+      <li> <a href="#">PLAN YOUR TRIP</a></li>
+      <li><a href="#">TRANSPORT</a></li>
+      <li><a href="#">ACCOMODATION</a></li>
+      <li><a href="#">HISTORY</a></li>
+      <li><a href="#">SHOPPING</a></li>
+      <li><a href="#">FOOD AND DRINKS</a></li>
+      <li><a href="#">ACTIVITIES</a></li>
+    </ul>
+  </nav>
+  <section id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">ACTIVITIES</a>
+    <a href="#">FOOD AND DRINKS</a>
+    <a href="#">SHOPPING</a>
+    <a href="#">HISTORY</a>
+    <a href="#">ACCOMODATION</a>
+    <a href="#">TRANSPORT</a>
+    <a href="#">PLAN YOUR TRIP</a>
+    <a href="#" class="buttoncenter"><button class="buttonslide">WATCH A MOVIE!</button></a>
+  </section>
+  <!-- navigation bar end-->
+  <!-- script for opening side menu start-->
+    <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '100%';
+      document.getElementById('main').style.marginLeft = '0px';
+    }
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+  <!-- script for opening side menu end-->
+  <!-- content DEsktop start-->
+  <section class="greencontent">
+    <p class="desktopwhite">Want to see the locations of all of the beautiful places in Køge?
+       Plan your trip here and view the most important information all in one place!
+    </p>
+  </section>
+  <!-- content desktop end-->
+        <section class="scrollmenu">
+          <button class="buttonlist">Activities</button>
+          <button class="buttonlist">Attractions</button>
+          <button class="buttonlist">Food and drinks</button>
+          <button class="buttonlist">Events</button>
+          <button class="buttonlist">Accomodation</button>
+          <button class="buttonlist">Transport</button>
+          <button class="buttonlist">Services</button>
+        </section>
                 <script src="js.js"></script>
                 <div id="map"></div>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHcm9ruvl4ZIL277Rlhlta_NitI_FNj9o&map_ids=86ad4126f5ea124b&callback=initMap"> </script>
                 <br>
-                <button onclick="openPinpointInfo0()" id="button1">click option 1</button>
+                <!-- <button onclick="openPinpointInfo0()" id="button1">click option 1</button>
                 <button onclick="openPinpointInfo1()" id="button2">click option 2</button>
                 <button onclick="openPinpointInfo2()" id="button3">click option 3</button>
-        
+        -->
 
 </body>
 </html>
